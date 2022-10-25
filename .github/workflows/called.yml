@@ -1,7 +1,6 @@
 name: called workflow
 
 on: push
-
 jobs:
   
   calling_workflow_A:
