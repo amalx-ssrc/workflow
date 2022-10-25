@@ -1,0 +1,13 @@
+name: called workflow
+
+on: push
+
+jobs:
+  
+  calling_workflow_A:
+    uses: amalx-ssrc/workflow-A/.github/workflow/workflowa.yml@main
+
+  calling_workflow_B:
+     uses: amalx-ssrc/workflow-B/.github/workflow//workflowb.yml@main
+
+  
