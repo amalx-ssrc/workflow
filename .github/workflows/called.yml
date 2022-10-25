@@ -5,9 +5,9 @@ on: push
 jobs:
   
   calling_workflow_A:
-    uses: amalx-ssrc/workflow-A/.github/workflow/workflowa.yml@main
+    uses: amalx-ssrc/workflow-A/.github/workflows/workflowa.yml@main
 
   calling_workflow_B:
-     uses: amalx-ssrc/workflow-B/.github/workflow//workflowb.yml@main
+     uses: amalx-ssrc/workflow-B/.github/workflows/workflowb.yml@main
 
   
