@@ -6,6 +6,7 @@ jobs:
   calling_workflow_A:
     uses: amalx-ssrc/workflow-A/.github/workflows/workflowa.yml@main
   calling_workflow_B:
+     needs: calling_workflow_A
      uses: amalx-ssrc/workflow-B/.github/workflows/workflowb.yml@main
 
   
