@@ -1,0 +1,11 @@
+name: "hello World action"
+description: "action print name in docker from workflow"
+
+inputs:
+  name:
+    required: true
+    description: "name passed from workflow"
+
+runs:
+  using: docker
+  image: Dockerfile
