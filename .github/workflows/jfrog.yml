@@ -1,0 +1,22 @@
+name: Publishing to jfrog using jfrog cli and access token
+
+on:
+ push:
+
+
+jobs:
+  artifact-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: creating file for Publishing
+        run: |
+          echo "Hello world" >> file.txt
+      - name: jfrog cli
+        uses: jfrog/setup-jfrog-cli@v2
+        env:
+           JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
+      
+      - name: checking configuration
+        run: |
+          jf rt ping 
+          jf rt u file.txt docker-demo
